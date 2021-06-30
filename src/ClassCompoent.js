@@ -21,6 +21,9 @@ class ClassCompoent extends Component {
   componentDidUpdate(prevProps, prevState) {
     console.log("%cclass => componentDidUpdate", classStyle);
   }
+  componentWillUnmount() {
+    console.log("%cclass => componentWillUnmount", classStyle);
+  }
   render() {
     console.log("%cclass => render", classStyle);
     return (

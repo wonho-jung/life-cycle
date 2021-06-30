@@ -11,7 +11,12 @@ function Functioncomponet(props) {
       funStyle
     );
     document.title = number + " : " + date;
-  }, [number]);
+    return () =>
+      console.log(
+        "%cfunc => useEffect return(componentWillUnMount)" + ++funId,
+        funStyle
+      );
+  }, []);
   console.log("%cfunc => render" + ++funId, funStyle);
   return (
     <div className="container">
